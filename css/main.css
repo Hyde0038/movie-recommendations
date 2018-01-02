@@ -72,8 +72,10 @@ html {
 #backButton{
     position: absolute;
     width: 2.9rem;
-    height: 2.9rem;
+    height: 3rem;
     padding: 0.5rem;
+    margin-bottom: 1px;
+    margin-left: 2px;
     background-color: lightgray;
     cursor: pointer;
     display: none;
