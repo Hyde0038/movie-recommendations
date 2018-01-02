@@ -21,6 +21,19 @@
                 <img id="backButton" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back"/>
                 <input type="text" class="searchInput" id="keyword" placeholder="Search" />          
                 <img class="searchButton" src="/img/magnifying-glass.svg" alt="Search" title="Search" />
+                
+                <!-- Please read:
+                
+                The code below displays the button properly, but disables search on button click: 
+                
+                <img id="searchButton" class="iconic iconic-md" data-src="./img/magnifying-glass.svg" alt="Search" title="Search" />
+                
+                By using an ID selector, and adding iconic iconic-md as class attributes, the button portrays properly, but the search feature no longer works. In main.js, the queryselector on Chrome will not add an eventlistener with an ID tag.....even though Chrome reports it will. As such, to make the applicaiton work, I have not used iconic and iconic-md classes. If you could explain how to add a eventlistener to an element with an ID selector, I would appreciate it... the code below in main.js does not work when I use id="searchButton". 
+                
+                document.querySelector('#searchButton').addEventListener('click', app.runSearch); 
+                  
+                --->
+                
             </div>
         </header>
 

@@ -14,7 +14,7 @@ const app = {
     init: function () {
         app.pages = document.querySelectorAll('.page');
         app.getConfig();
-        app.displayViews("newSearch")
+        app.displayViews("newSearch");
         document.querySelector('.searchInput').focus();
         document.querySelector('.searchButton').addEventListener('click', app.runSearch);
         document.querySelector('.searchInput').addEventListener('keypress', function (ev) {
@@ -272,18 +272,13 @@ const app = {
       },
 
     showLoading: function () {
-        
         document.getElementById('loading').style.display = "block";
-        
-        
     },
 
     hideLoading: function () {
         document.getElementById('loading').style.display = "none";
-        
     },
  
-    
     //Code to add html elements
     createNode: function (element) {
         return document.createElement(element);
@@ -294,9 +289,6 @@ const app = {
         let childElement = el
         return parent.appendChild(childElement);
     },
-    
- 
-
 }
 
 
