@@ -1,0 +1,150 @@
+/******************************************
+                DEFAULTS
+******************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    background-color: #f5f5f5;
+    
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    
+}
+
+/******************************************
+                LAYOUT
+******************************************/
+.page {
+    width: 100%;
+    min-height: 150%;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.page.active{
+    display: block;
+}
+
+#loading {
+    margin-top: 20%;
+    margin-left: 40%; 
+    display: none;
+}
+
+#credit {
+    height: 100px;
+    width: 100px;
+}
+/******************************************
+                SEARCH BAR
+******************************************/
+
+.search {
+    height: 3rem;
+    display: inline-block;
+    transition: 0.8s;
+    text-align: center;
+    width: 100%;
+}
+#appTitle {
+    font-size: 2.5rem;
+    padding: 6rem 0 5rem 0;
+    color: white;
+    background: cornflowerblue;
+    margin-bottom: 1rem;
+    font-family: Arial, serif;
+}
+#searchBar {
+    height: 100%;
+    width: 100%; 
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#backButton{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    background-color: lightgray;
+    cursor: pointer;
+    display: none;
+}
+
+.searchButton{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin-left: -49px;
+    background-color: lightgray;
+    cursor: pointer;
+    
+}
+.searchInput{
+    height: 3rem;
+    width: 80%;
+    padding: 0.5rem;
+    margin-left: 47px;
+    font-size: 1.8rem;
+}
+/******************************************
+            SEARCH RESULTS
+******************************************/
+
+#searchResults {
+    display: none;
+}
+#recommendations {
+    display: none;
+}
+#resultsTitle {
+    display: none;
+}
+
+.movie{
+    border: 4rem;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    min-height: 180px;
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem;
+    position: relative;
+    background-color: white;
+}
+.poster{
+    float: left;
+    overflow: auto;
+    clear: both;
+    background-color: black;
+    min-height: 100px;
+    height: 150px;
+    margin: 0 1rem 1rem 0;
+    cursor:pointer;
+}
+.movie-title{
+    font-size: 2rem;
+    color: black;
+    cursor:pointer;
+}
+.movie-desc{
+    font-size: 1rem;
+    color: #666;
+}
+/******************************************
+             ATTRIBUTION
+******************************************/
+.attribution, .footer{
+    margin-top: 55px;
+    margin-left: 25%;
+    margin-right: 25%; 
+}

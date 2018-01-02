@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="/js/iconic.min.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="search">
+            <div id="appTitle"><h1 >Movie </h1><p>Recommendations</p></div>
+            
+            <div id="searchBar">
+                <img id="backButton" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back"/>
+                <input type="text" class="searchInput" id="keyword" placeholder="Search" />          
+                <img class="searchButton" src="/img/magnifying-glass.svg" alt="Search" title="Search" />
+            </div>
+        </header>
+
+       <div class="page" id="searchResults">
+                <section class="title" id="resultHeader">
+                </section>
+
+                <section class="content" id="movieList"></section>
+        </div>
+        
+        <div class="page" id="recommendations">
+            <section class="title" id="recommendationHeader"></section>
+            <section class="content" id="recMovieList"></section>
+        </div>
+        
+        <div id="loading">
+        <img class="iconic" data-src="./img/loop-circular.svg" title="loop circular" />
+        </div>
+        
+        <footer>
+            <figure class="attribution">
+                <a href="https://www.themoviedb.org"><img src="https://www.themoviedb.org/assets/static_cache/27b65cb40d26f78354a4ac5abf87b2be/images/v4/logos/powered-by-rectangle-green.svg" alt="The Movie DB"/></a>
+            </figure>
+        </footer>
+    </main>
+</body>
+
+</html>
