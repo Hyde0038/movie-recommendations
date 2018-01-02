@@ -134,6 +134,8 @@ html {
 .movie-title{
     font-size: 2rem;
     color: black;
+}
+#searchResults .movie-title{
     cursor:pointer;
 }
 .movie-desc{
